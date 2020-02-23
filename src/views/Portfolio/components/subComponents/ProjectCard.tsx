@@ -1,17 +1,18 @@
 import React from "react";
 
-import { Box, Card, theme } from "bushido-strap";
+const { Box, Card } = require("bushido-strap");
 
-export default function ProjectCard({
-  url,
-  github,
-  img,
-  youTube,
-  title,
-  description,
-  npm
+export default function ProjectCard(props: {
+  url: string;
+  github: any;
+  img: string;
+  youTube: any;
+  title: string;
+  description: string;
+  npm: any;
 }) {
-  // export default function ProjectCard(project) {
+  const { url, github, img, youTube, title, description, npm } = props;
+
   return (
     <Card invert noshadow m="3rem 0" w="30rem">
       <a href={url}>

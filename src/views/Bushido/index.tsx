@@ -1,8 +1,8 @@
 import React from "react";
 
-import { Wrapper } from "bushido-strap";
-
 import Nav from "../../components/Nav";
+
+const { Wrapper } = require("bushido-strap");
 
 export default function Bushido() {
   return (

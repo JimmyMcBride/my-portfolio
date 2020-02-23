@@ -2,15 +2,15 @@ import React from "react";
 
 import "./styles.scss";
 
-import { Box, NavBar, FlexBox, Linkton } from "bushido-strap";
-
 import { NavLink } from "react-router-dom";
+
+const { Box, NavBar, Flex, Button, Text, theme } = require("bushido-strap");
 
 export default function Nav() {
   return (
-    <NavBar h="3.6rem" jc_around background="rgba(0, 0, 0, 0.4)">
+    <NavBar ai_center jc_around bg={theme.blackAlpha6}>
       <Box w="154.56px" />
-      <FlexBox margin="0">
+      <Flex m="0">
         <Box className="nav-box">
           <NavLink exact to="/" activeClassName="active">
             Home
@@ -31,10 +31,14 @@ export default function Nav() {
           Bushido React Pack
         </NavLink>
       </Box> */}
-      </FlexBox>
-      <FlexBox align="center" margin="0">
-        <Linkton>Sign up/Login</Linkton>
-      </FlexBox>
+      </Flex>
+      <Flex ai_center m="0">
+        <Button orange>
+          <Text f_size="1.4rem">Sign up</Text>
+          <Box stretch h="0.2rem" bg={theme.gray1} />
+          <Text f_size="1.4rem">Login</Text>
+        </Button>
+      </Flex>
     </NavBar>
   );
 }

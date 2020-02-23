@@ -1,30 +1,30 @@
 import React from "react";
 
-// Set up all routes in App
-import { Route, Switch } from "react-router-dom";
-
-// Using custom styled components from Global folder in components
-import { AppWrapper } from "bushido-strap";
-
-// Using Web Font Loader for google fonts
-import WebFont from "webfontloader";
-
 // Importing all routes
 import Dashboard from "./views/Dashboard";
 import Portfolio from "./views/Portfolio";
 import Blog from "./views/Blog";
 import Bushido from "./views/Bushido";
 
+// Using Web Font Loader for google fonts
+const WebFont = require("webfontloader");
+
+// Using custom styled components from Global folder in components
+const { AppWrapper } = require("bushido-strap");
+
+// Set up all routes in App
+const { Route, Switch } = require("react-router-dom");
+
 const h_font = "Comfortaa";
 const r_font = "Montserrat";
 
 WebFont.load({
   google: {
-    families: [h_font, r_font]
-  }
+    families: [h_font, r_font],
+  },
 });
 
-const img_url =
+const img_url: string =
   "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fhdqwalls.com%2Fdownload%2Fcolorful-qhd-3840x2160.jpg&f=1&nofb=1";
 
 export default function App() {

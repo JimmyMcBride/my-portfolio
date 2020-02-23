@@ -1,14 +1,14 @@
 import React from "react";
 
-import { Row } from "bushido-strap";
-
-import ProjectCard from "./subcomponents/ProjectCard";
+import ProjectCard from "./subComponents/ProjectCard";
 
 import projects from "./assets/projects";
 
+const { Flex } = require("bushido-strap");
+
 export default function Projects() {
   return (
-    <Row wrap justify="space-around">
+    <Flex wrap justify="space-around">
       <ProjectCard
         title={projects.nutri.title}
         url={projects.nutri.url}
@@ -63,6 +63,6 @@ export default function Projects() {
         npm={null}
         description={projects.rick.description}
       />
-    </Row>
+    </Flex>
   );
 }
