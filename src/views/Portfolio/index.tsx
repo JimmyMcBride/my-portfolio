@@ -3,7 +3,7 @@ import React from "react";
 import Nav from "../../components/Nav";
 import Projects from "./components/Projects";
 
-const { Wrapper, Box, Card, Text, Linkton, theme } = require("bushido-strap");
+const { Wrapper, Box, Card, Text, theme } = require("bushido-strap");
 
 export default function Portfolio() {
   return (
@@ -21,7 +21,6 @@ export default function Portfolio() {
           <Box h="2rem" />
           <Text xlf>Some of the recent projects I've worked on:</Text>
           <Box h="2rem" />
-          {/* <Linkton to="/">Home</Linkton> */}
         </Card>
         <Projects />
         <Box h="8rem" />
