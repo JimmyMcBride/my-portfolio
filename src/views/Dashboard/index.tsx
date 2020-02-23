@@ -11,7 +11,7 @@ const { Wrapper, Box, Card, theme } = require("bushido-strap");
 
 export default function Dashboard() {
   return (
-    <Wrapper className="dashboard-wrapper">
+    <Wrapper>
       <Nav />
       <Card
         bg={theme.blackAlpha8}
@@ -30,7 +30,10 @@ export default function Dashboard() {
         </Box>
 
         <Box h="2rem" />
-        <ReactMarkdown source={about} />
+        <Box w="80%" ta_center>
+          <ReactMarkdown source={about} />
+        </Box>
+        <Box h="4rem" />
       </Card>
     </Wrapper>
   );

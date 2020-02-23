@@ -4,12 +4,12 @@ import "./styles.scss";
 
 import { NavLink } from "react-router-dom";
 
-const { Box, NavBar, Flex, Button, Text, theme } = require("bushido-strap");
+const { Box, NavBar, Flex, theme } = require("bushido-strap");
 
 export default function Nav() {
   return (
-    <NavBar ai_center jc_around bg={theme.blackAlpha6}>
-      <Box w="154.56px" />
+    <NavBar ai_center jc_center bg={theme.blackAlpha6}>
+      {/* <Box w="15rem" /> */}
       <Flex m="0">
         <Box className="nav-box">
           <NavLink exact to="/" activeClassName="active">
@@ -32,13 +32,13 @@ export default function Nav() {
         </NavLink>
       </Box> */}
       </Flex>
-      <Flex ai_center m="0">
-        <Button orange>
+      {/* <Flex ai_center m="0" w="15rem"> */}
+      {/* <Button orange>
           <Text f_size="1.4rem">Sign up</Text>
           <Box stretch h="0.2rem" bg={theme.gray1} />
           <Text f_size="1.4rem">Login</Text>
-        </Button>
-      </Flex>
+        </Button> */}
+      {/* </Flex> */}
     </NavBar>
   );
 }

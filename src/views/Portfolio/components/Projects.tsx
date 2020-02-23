@@ -8,7 +8,7 @@ const { Flex } = require("bushido-strap");
 
 export default function Projects() {
   return (
-    <Flex wrap justify="space-around">
+    <Flex col>
       <ProjectCard
         title={projects.nutri.title}
         url={projects.nutri.url}

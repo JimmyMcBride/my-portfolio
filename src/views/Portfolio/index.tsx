@@ -11,19 +11,22 @@ export default function Portfolio() {
       <Nav />
       <Card invert m="0" bg={theme.blackAlpha8} stretch max_w="80rem" noshadow>
         <Box h="2.4rem" />
-        <Card invert noshadow opacity="0.9" p="2rem">
-          <Box h="2rem" />
-          <Box>
-            <Text bold f_size="5rem" color={theme.gray0}>
-              My Portfolio
-            </Text>
-          </Box>
-          <Box h="2rem" />
-          <Text xlf>Some of the recent projects I've worked on:</Text>
-          <Box h="2rem" />
+        <Card bg={theme.gray7} noshadow>
+          <Card bg={theme.whiteAlpha5} noshadow stretch>
+            <Card noshadow p="2rem" stretch invert>
+              <Box h="2rem" />
+              <Box>
+                <Text bold f_size="5rem">
+                  My Portfolio
+                </Text>
+              </Box>
+              <Box h="2rem" />
+              <Text xlf>Some of the recent projects I've worked on:</Text>
+              <Box h="2rem" />
+            </Card>
+          </Card>
+          <Projects />
         </Card>
-        <Projects />
-        <Box h="8rem" />
       </Card>
     </Wrapper>
   );
